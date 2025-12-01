@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>Maze Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🧩 Maze Game</h1>
+    <p>미로 게임 프로젝트</p>
+  </div>
+  
+  <div id="ui-area">
+    <label>스테이지 선택: </label>
+    <select id="stageSelect">
+      <option value="1">Stage 1</option>
+      <option value="2">Stage 2</option>
+      <option value="3">Stage 3</option>
+      <option value="4">Stage 4</option>
+      <option value="5">Stage 5</option>
+      <option value="6">Stage 6</option>
+      <option value="7">Stage 7</option>
+      <option value="8">Stage 8</option>
+      <option value="9">Stage 9</option>
+      <option value="10">Stage 10</option>
+    </select>
+    <button id="startBtn">Start</button>
+  </div>
+  
+  <!-- 미로 + UI 패널을 묶어둠 -->
+  <div id="game-area">
+    <canvas id="gameCanvas"></canvas>
+    <div id="side-ui"></div>
+  </div>
+
+  <script type="module" scr="maze.js"></script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
